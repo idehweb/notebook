@@ -1,0 +1,69 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>
+      {{convert(wholeMony)}}
+      <span *ngIf="wholeMony">تومان</span>
+      
+    </ion-title>
+
+
+
+  </ion-navbar>
+</ion-header>
+<ion-content padding id="page1">
+  <ion-item>
+    <ion-label color="primary">چقدر؟</ion-label>
+    <ion-input [(ngModel)]="money" type="number"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label color="primary">واس چی؟</ion-label>
+    <ion-input [(ngModel)]="whyfor"></ion-input>
+  </ion-item>
+  <ion-list radio-group [(ngModel)]="type" class="margin-right">
+    <ion-row>
+      <ion-col>
+        <ion-item>
+          <ion-label class="fontweigtnormal">گرفتم</ion-label>
+          <ion-radio value="t1" checked="true"></ion-radio>
+        </ion-item>
+      </ion-col>
+      <ion-col>
+        <ion-item>
+          <ion-label class="fontweigtnormal">دادم</ion-label>
+          <ion-radio value="t2"></ion-radio>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+  </ion-list>
+  <ion-row>
+    <ion-col>
+      <button ion-button full block (click)="submit()">ثبت</button>
+    </ion-col>
+    <ion-col *ngIf="editMode && itemToEdit">
+      <button ion-button full block (click)="cancel()">لغو</button>
+    </ion-col>
+  </ion-row>
+ 
+  <div class="listBelow">
+    <ion-list class="type {{item.type}}" *ngFor="let item of items;let i=index">
+      <ion-item-sliding>
+        <ion-item>
+          {{convert(item.money)}} تومان
+          <br>
+          {{item.whyfor}}
+        </ion-item>
+        <ion-item-options side="left">
+          <button ion-button color="danger" (click)="deleteConfirm(item)">حذف</button>
+          <button ion-button (click)="editThis(item)">ویرایش</button>
+        </ion-item-options>
+      </ion-item-sliding>
+    </ion-list>
+  </div>
+  <div *ngIf="err">
+    {{err}}
+  </div>
+
+</ion-content>

@@ -1,0 +1,50 @@
+// http://ionicframework.com/docs/v2/theming/
+
+
+// App Global Sass
+// --------------------------------------------------
+// Put style rules here that you want to apply globally. These
+// styles are for the entire app and not just one component.
+// Additionally, this file can be also used as an entry point
+// to import other Sass files to be included in the output CSS.
+//
+// Shared Sass variables, which can be used to adjust Ionic's
+// default Sass variables, belong in "theme/variables.scss".
+//
+// To declare rules for a specific mode, create a child rule
+// for the .md, .ios, or .wp mode classes. The mode class is
+// automatically applied to the <body> element in the app.
+.scroll-content {
+ /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffb76b+0,ffa73d+33,ffa73d+34,ffa73d+34,ff7c00+67,ff7f04+100 */
+background: #fff;
+}
+ion-title {
+    background-color:hsla(0, 0%, 97%, 0) !important;
+  }
+  .toolbar-title-md {
+    color: #000000 !important; 
+  }  
+  .item-md p {
+    text-align: right;
+  }
+
+  .toolbar-title-md{
+      text-align: center !important
+  }
+.item-inner{
+  padding-right: 8px;
+  padding-left:0px;
+  text-align: right; 
+}
+ion-list{
+  direction: rtl;
+}
+ion-item .input-wrapper{
+  direction: rtl
+}
+[padding] h1:first-child, [padding] h2:first-child, [padding] h3:first-child, [padding] h4:first-child, [padding] h5:first-child, [padding] h6:first-child {
+  margin-top: 0 !important;
+}
+input[type="text"]{
+  text-align: right;
+}

@@ -1,0 +1,4 @@
+#Fri Feb 08 00:56:37 IRST 2019
+base.0=/Users/hamidalinia/Documents/projects/notebook/platforms/android/app/build/intermediates/transforms/dexMerger/debug/0
+path.0=classes.dex
+renamed.0=classes.dex

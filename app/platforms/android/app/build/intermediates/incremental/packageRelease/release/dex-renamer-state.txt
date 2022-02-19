@@ -1,0 +1,4 @@
+#Mon Feb 11 21:16:13 IRST 2019
+base.0=/Users/hamidalinia/Documents/projects/notebook/app/platforms/android/app/build/intermediates/transforms/dex/release/0
+path.0=classes.dex
+renamed.0=classes.dex

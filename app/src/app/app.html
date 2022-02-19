@@ -1,0 +1,30 @@
+<ion-menu [content]="mainContent" side="right" (ionOpen)="menuOpened()" (ionClose)="menuClosed()">
+  <ion-header>
+    <ion-toolbar>
+      <ion-title>
+        فهرست
+      </ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content id="side-menu21">
+    <ion-list id="menu-list1">
+      <ion-item color="none" menuClose="" on-click="goToList()" id="menu-list-item1">
+        خروجی و گزارش
+      </ion-item>
+      <ion-item color="none" menuClose="" on-click="goToAdvice()" id="menu-list-item2">
+        به اشتراک گذاری حساب ها
+      </ion-item>
+
+      <ion-item (click)="letUsActivatePass()">
+        <ion-label>رمز صفحه</ion-label>
+        <ion-toggle [(ngModel)]="passwordActive"></ion-toggle>
+      </ion-item>
+      <!-- <ion-item color="none" menuClose="" on-click="goToAbout()" id="menu-list-item2">
+        درباره تن ویچ
+      </ion-item> -->
+
+    </ion-list>
+  </ion-content>
+</ion-menu>
+
+<ion-nav #mainContent [root]="rootPage"></ion-nav>

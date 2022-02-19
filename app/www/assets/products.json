@@ -1,0 +1,67 @@
+[{
+    "id":1,
+    "foodName":"ژامبون گوشت ۹۰ درصد",
+    "price":"7000",
+    "price_html":"8,000 تومان",
+    "description":"",
+    "list":[
+        {"title":"غذای سرد"},
+        {"title":"همراه سه سس"}
+    ]
+},
+{
+    "id":2,
+    "foodName":"ژامبون مرغ ۹۰ درصد",
+    "price":"7000",
+    "price_html":"8,000 تومان",
+    "description":"",
+    "list":[
+        {"title":"غذای سرد"},
+        {"title":"همراه سه سس"}
+    ]
+},
+{
+    "id":2,
+    "foodName":"فیله مرغ گریل شده",
+    "price":"8000",
+    "price_html":"8,000 تومان",
+    "description":"",
+    "list":[
+        {"title":"غذای گرم"},
+        {"title":"همراه سه نوع سس مختلف"}
+    ]
+},
+{
+    "id":4,
+    "foodName":"ژامبون مرغ ۷۰ درصد",
+    "price":"5000",
+    "price_html":"8,000 تومان",
+    "description":"",
+    "list":[
+        {"title":"غذای سرد"},
+        {"title":"همراه سه سس"}
+    ]
+},
+{
+    "id":5,
+    "foodName":"ژامبون گوشت ۷۰ درصد",
+    "price":"5000",
+    "price_html":"8,000 تومان",
+    "description":"",
+    "list":[
+        {"title":"غذای سرد"},
+        {"title":"همراه سه سس"}
+    ]
+},
+{
+    "id":6,
+    "foodName":"مرغ ویژه",
+    "price":"8000",
+    "price_html":"8,000 تومان",
+    "description":"",
+    "list":[
+        {"title":"غذای سرد"},
+        {"title":"همراه سه سس"}
+    ]
+}
+]
